@@ -200,6 +200,7 @@ class Lightbox extends Component {
 			onClickImage,
 			showImageCount,
 			showThumbnails,
+			theme: propsTheme
 		} = this.props;
 
 		if (!images || !images.length) return null;
@@ -234,6 +235,7 @@ class Lightbox extends Component {
 					style={{
 						cursor: this.props.onClickImage ? 'pointer' : 'auto',
 						maxHeight: `calc(100vh - ${heightOffset})`,
+						...propsTheme.image
 					}}
 				/>
 				<Footer
@@ -330,7 +332,6 @@ const classes = StyleSheet.create({
 		height: 'auto',
 		margin: '0 auto', // maintain center on very short screens OR very narrow image
 		maxWidth: '100%',
-		background: 'white',
 
 		// disable user select
 		WebkitTouchCallout: 'none',
