@@ -51,6 +51,8 @@ const theme = {
 	// container
 	container: { background: 'rgba(255, 255, 255, 0.9)' },
 
+	image: {background: 'white'},
+
 	// arrows
 	arrow: {
 		backgroundColor: 'rgba(255, 255, 255, 0.8)',
