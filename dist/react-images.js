@@ -1895,6 +1895,7 @@ var Lightbox = (function (_Component) {
 			var onClickImage = _props2.onClickImage;
 			var showImageCount = _props2.showImageCount;
 			var showThumbnails = _props2.showThumbnails;
+			var propsTheme = _props2.theme;
 
 			if (!images || !images.length) return null;
 
@@ -1924,7 +1925,7 @@ var Lightbox = (function (_Component) {
 					style: _extends({
 						cursor: this.props.onClickImage ? 'pointer' : 'auto',
 						maxHeight: 'calc(100vh - ' + heightOffset + ')'
-					}, _theme2['default'].image)
+					}, propsTheme.image)
 				}),
 				_react2['default'].createElement(_componentsFooter2['default'], {
 					caption: images[currentImage].caption,
